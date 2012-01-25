@@ -13,6 +13,7 @@ Source2:	clock-icon.png
 BuildRequires:	imagemagick
 BuildRequires:	libapm-devel
 BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xpm)
 
 Conflicts:	WindowMaker < 0.95.0-3
