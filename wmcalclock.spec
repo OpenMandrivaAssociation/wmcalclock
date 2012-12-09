@@ -67,3 +67,16 @@ convert -size 16x16 %{SOURCE2} %{buildroot}/%{_miconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %doc %{_mandir}/*/*
 
+
+
+%changelog
+* Wed Jan 25 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.25-1
++ Revision: 768143
+- added missing BR
+- imported package wmcalclock
+
+
+* Wed Jul 08 2009 mdawkins <mattydaw@gmail.com> 1.25-1
+- created separate pkg from WindowMaker
+- updated url
+
