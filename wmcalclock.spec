@@ -1,3 +1,6 @@
+%define _enable_debug_packages	%{nil}
+%define debug_package		%{nil}
+
 %define oname	wmCalClock
 
 Name: 	 	wmcalclock
@@ -26,7 +29,7 @@ wmCalClock is a calendar and clock application for Window Maker.
 
 %build
 pushd Src
-%make
+%make CFLAGS="%{optflags}" CCOPTS="%{ldflags}"
 popd
 										
 %install
