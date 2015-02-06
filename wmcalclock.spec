@@ -6,7 +6,7 @@
 Name: 	 	wmcalclock
 Summary: 	Calendar and clock application for Window Maker
 Version: 	1.25
-Release: 	1
+Release: 	2
 URL:		http://dockapps.windowmaker.org/file.php/id/9
 License:	GPL
 Group:		Graphical desktop/WindowMaker
