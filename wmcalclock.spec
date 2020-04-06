@@ -2,6 +2,7 @@
 %define debug_package		%{nil}
 
 %define oname	wmCalClock
+%define srcdirname    Src
 
 Name: 	 	wmcalclock
 Summary: 	Calendar and clock application for Window Maker
@@ -25,7 +26,7 @@ Conflicts:	WindowMaker < 0.95.0-3
 wmCalClock is a calendar and clock application for Window Maker.
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{oname}-%{version}
 
 %build
 %make -C %{srcdirname} CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
