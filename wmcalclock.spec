@@ -28,6 +28,8 @@ wmCalClock is a calendar and clock application for Window Maker.
 %setup -qn %{oname}-%{version}
 
 %build
+export CC=gcc
+export CXX=g++
 pushd Src
 %make_build CFLAGS="%{optflags}" CCOPTS="%{ldflags}"
 popd
