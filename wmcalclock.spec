@@ -30,7 +30,7 @@ wmCalClock is a calendar and clock application for Window Maker.
 %setup -q -n %{oname}-%{version}
 
 %build
-%make -C %{srcdirname} CFLAGS="%{optflags}" LDFLAGS="%{ldflags}"
+%make -C %{srcdirname}
 
 %install
 install -D -m 755 %{srcdirname}/%{srcname} %{buildroot}%{_bindir}/%{name}
