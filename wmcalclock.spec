@@ -6,7 +6,7 @@
 Name: 	 	wmcalclock
 Summary: 	Calendar and clock application for Window Maker
 Version: 	1.25
-Release: 	2
+Release: 	3
 URL:		http://dockapps.windowmaker.org/file.php/id/9
 License:	GPL
 Group:		Graphical desktop/WindowMaker
@@ -14,7 +14,7 @@ Source0:	http://dockapps.windowmaker.org/download.php/id/16/%{oname}-%{version}.
 Source2:	clock-icon.png
 
 BuildRequires:	imagemagick
-BuildRequires:	libapm-devel
+BuildRequires:	apmd-devel
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xpm)
@@ -29,7 +29,7 @@ wmCalClock is a calendar and clock application for Window Maker.
 
 %build
 pushd Src
-%make CFLAGS="%{optflags}" CCOPTS="%{ldflags}"
+%make_build CFLAGS="%{optflags}" CCOPTS="%{ldflags}"
 popd
 										
 %install
